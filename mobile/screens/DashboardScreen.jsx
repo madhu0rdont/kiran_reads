@@ -20,6 +20,7 @@ export default function DashboardScreen({
   loading,
   onRefresh,
   fetchNotes,
+  onAdmin,
 }) {
   const [notesModal, setNotesModal] = useState(null);
   const [notes, setNotes] = useState([]);
@@ -69,9 +70,14 @@ export default function DashboardScreen({
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.greeting}>Hi {user?.name} 👋</Text>
-        <TouchableOpacity onPress={onLogout}>
-          <Text style={styles.logoutText}>Logout</Text>
-        </TouchableOpacity>
+        <View style={styles.headerRight}>
+          <TouchableOpacity onPress={onAdmin} style={styles.adminButton}>
+            <Text style={styles.adminText}>Admin</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onLogout}>
+            <Text style={styles.logoutText}>Logout</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <FlatList
@@ -157,6 +163,22 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '700',
     color: '#333',
+  },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 16,
+  },
+  adminButton: {
+    backgroundColor: '#E8F5E9',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+  },
+  adminText: {
+    fontSize: 14,
+    color: '#2E7D32',
+    fontWeight: '600',
   },
   logoutText: {
     fontSize: 16,

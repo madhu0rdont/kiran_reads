@@ -4,6 +4,7 @@ import LoginScreen from './screens/LoginScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import LessonScreen from './screens/LessonScreen';
 import CelebrationScreen from './screens/CelebrationScreen';
+import AdminScreen from './screens/AdminScreen';
 import { useAuth } from './hooks/useAuth';
 import { useProgress } from './hooks/useProgress';
 
@@ -91,6 +92,15 @@ export default function App() {
     );
   }
 
+  if (screen === 'admin') {
+    return (
+      <AdminScreen
+        progress={progress}
+        onBack={() => setScreen('dashboard')}
+      />
+    );
+  }
+
   if (screen === 'celebration' && completedLessonNumber) {
     return (
       <CelebrationScreen
@@ -110,6 +120,7 @@ export default function App() {
       loading={progressLoading}
       onRefresh={fetchProgress}
       fetchNotes={fetchNotes}
+      onAdmin={() => setScreen('admin')}
     />
   );
 }
