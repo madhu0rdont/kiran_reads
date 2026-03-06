@@ -12,7 +12,7 @@ import lessons from '../data/lessons.json';
 import SegmentCard from '../components/SegmentCard';
 import ParentCue from '../components/ParentCue';
 
-export default function LessonScreen({ lessonNumber, onComplete, onExit }) {
+export default function LessonScreen({ lessonNumber, onComplete, onExit, preview }) {
   const lesson = lessons.find((l) => l.lessonNumber === lessonNumber);
   const [segmentIndex, setSegmentIndex] = useState(0);
   const startTime = useRef(Date.now());
@@ -54,8 +54,12 @@ export default function LessonScreen({ lessonNumber, onComplete, onExit }) {
 
   const handleNext = () => {
     if (isLast) {
-      const durationSecs = Math.round((Date.now() - startTime.current) / 1000);
-      onComplete(lessonNumber, durationSecs);
+      if (preview) {
+        onExit();
+      } else {
+        const durationSecs = Math.round((Date.now() - startTime.current) / 1000);
+        onComplete(lessonNumber, durationSecs);
+      }
     } else {
       animateTransition(() => setSegmentIndex((i) => i + 1));
     }
@@ -83,6 +87,7 @@ export default function LessonScreen({ lessonNumber, onComplete, onExit }) {
       {/* Top bar */}
       <View style={styles.topBar}>
         <Text style={styles.topBarText}>
+          {preview && <Text style={styles.previewBadge}>PREVIEW  </Text>}
           Lesson {lessonNumber} — Segment {segmentIndex + 1} of{' '}
           {segments.length}
         </Text>
@@ -133,6 +138,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#888',
     fontWeight: '500',
+  },
+  previewBadge: {
+    color: '#E65100',
+    fontWeight: '700',
+    fontSize: 12,
   },
   progressBarBg: {
     height: 3,

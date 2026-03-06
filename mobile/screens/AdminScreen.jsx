@@ -24,7 +24,7 @@ const SEGMENT_TYPE_COLORS = {
   review: '#F3E5F5',
 };
 
-export default function AdminScreen({ progress, onBack }) {
+export default function AdminScreen({ progress, onBack, onPreviewLesson }) {
   const [tab, setTab] = useState('past');
   const [allNotes, setAllNotes] = useState({});
   const [notesLoading, setNotesLoading] = useState(false);
@@ -168,6 +168,13 @@ export default function AdminScreen({ progress, onBack }) {
                 {lesson.segments.map(renderSegmentPreview)}
               </>
             )}
+
+            <TouchableOpacity
+              style={styles.tryItButton}
+              onPress={() => onPreviewLesson(lessonNumber)}
+            >
+              <Text style={styles.tryItText}>Try It (no progress saved)</Text>
+            </TouchableOpacity>
           </View>
         )}
       </View>
@@ -196,6 +203,13 @@ export default function AdminScreen({ progress, onBack }) {
         {isExpanded && (
           <View style={styles.lessonCardBody}>
             {lesson.segments.map(renderSegmentPreview)}
+
+            <TouchableOpacity
+              style={styles.tryItButton}
+              onPress={() => onPreviewLesson(lesson.lessonNumber)}
+            >
+              <Text style={styles.tryItText}>Try It (no progress saved)</Text>
+            </TouchableOpacity>
           </View>
         )}
       </View>
@@ -413,6 +427,20 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: '#666',
     lineHeight: 19,
+  },
+  tryItButton: {
+    backgroundColor: '#E8F5E9',
+    borderWidth: 1,
+    borderColor: '#A5D6A7',
+    borderRadius: 10,
+    paddingVertical: 12,
+    alignItems: 'center',
+    marginTop: 12,
+  },
+  tryItText: {
+    color: '#2E7D32',
+    fontSize: 15,
+    fontWeight: '600',
   },
   emptyText: {
     textAlign: 'center',

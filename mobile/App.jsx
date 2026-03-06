@@ -22,6 +22,7 @@ export default function App() {
   const [screen, setScreen] = useState('dashboard');
   const [activeLessonNumber, setActiveLessonNumber] = useState(null);
   const [completedLessonNumber, setCompletedLessonNumber] = useState(null);
+  const [previewMode, setPreviewMode] = useState(false);
 
   useEffect(() => {
     if (user) {
@@ -66,8 +67,16 @@ export default function App() {
   }, [fetchProgress]);
 
   const handleLessonExit = useCallback(() => {
-    setScreen('dashboard');
+    const returnTo = previewMode ? 'admin' : 'dashboard';
+    setScreen(returnTo);
     setActiveLessonNumber(null);
+    setPreviewMode(false);
+  }, [previewMode]);
+
+  const handlePreviewLesson = useCallback((lessonNumber) => {
+    setActiveLessonNumber(lessonNumber);
+    setPreviewMode(true);
+    setScreen('lesson');
   }, []);
 
   if (authLoading) {
@@ -88,6 +97,7 @@ export default function App() {
         lessonNumber={activeLessonNumber}
         onComplete={handleLessonComplete}
         onExit={handleLessonExit}
+        preview={previewMode}
       />
     );
   }
@@ -97,6 +107,7 @@ export default function App() {
       <AdminScreen
         progress={progress}
         onBack={() => setScreen('dashboard')}
+        onPreviewLesson={handlePreviewLesson}
       />
     );
   }
