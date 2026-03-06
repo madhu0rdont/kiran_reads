@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Kiran Reads",
+    "slug": "kiran-reads",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FAFAF5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kiranreads.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FAFAF5"
+      },
+      "package": "com.kiranreads.app"
+    }
+  }
+}

@@ -1,0 +1,496 @@
+[
+  {
+    "lessonNumber": 1,
+    "title": "Lesson 1",
+    "segments": [
+      {
+        "type": "sound_practice",
+        "displayText": "m",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is mmm. Say it with me: mmm.' Have Kiran say 'mmm' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "s",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is sss. Say it with me: sss.' Have Kiran say 'sss' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "a",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is aaa. Say it with me: aaa.' Have Kiran say 'aaa' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "am",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word slowly. Say: 'This word is aaammm. Let's say it together: aaammm.' Say it fast: 'am.' Repeat until confident.",
+        "durationHint": 60
+      },
+      {
+        "type": "story",
+        "displayText": "Sam.",
+        "displayStyle": "sentence",
+        "parentCue": "Point to the word. Say: 'This says Sam.' Ask: 'Can you say Sam?' Praise any attempt.",
+        "durationHint": 30
+      }
+    ]
+  },
+  {
+    "lessonNumber": 2,
+    "title": "Lesson 2",
+    "segments": [
+      {
+        "type": "sound_practice",
+        "displayText": "a",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'What sound is this?' If Kiran says 'aaa,' praise. If not, say: 'This is aaa. Say it with me.'",
+        "durationHint": 20
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "m",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'What sound is this?' Praise correct response. Correct if needed: 'This is mmm.'",
+        "durationHint": 20
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "s",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'What sound is this?' Praise correct response. Correct if needed: 'This is sss.'",
+        "durationHint": 20
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "e",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is eee. Say it with me: eee.' Have Kiran say 'eee' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "am",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'Sound it out with me: aaammm. What word? Am.' Repeat.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "me",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'Sound it out: mmmeee. What word? Me.' Repeat until confident.",
+        "durationHint": 45
+      },
+      {
+        "type": "story",
+        "displayText": "Sam. Me.",
+        "displayStyle": "sentence",
+        "parentCue": "Point to each word. Read together. Ask Kiran to point to 'me.' Celebrate success.",
+        "durationHint": 30
+      }
+    ]
+  },
+  {
+    "lessonNumber": 3,
+    "title": "Lesson 3",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "m  s  a  e",
+        "displayStyle": "word",
+        "parentCue": "Point to each letter. Ask: 'What sound?' Go through all four. Praise correct answers, gently correct mistakes.",
+        "durationHint": 40
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "t",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is t. Say it with me: t.' Have Kiran say 't' three times. Keep it a quick, crisp sound.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "at",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'Sound it out: aaat. What word? At.' Repeat.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "sat",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word slowly. Say: 'sss-aaa-t. Sat!' Have Kiran try sounding it out.",
+        "durationHint": 60
+      },
+      {
+        "type": "word_reading",
+        "displayText": "mat",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'mmm-aaa-t. Mat!' Ask: 'What word?' Repeat until confident.",
+        "durationHint": 45
+      },
+      {
+        "type": "story",
+        "displayText": "Sam sat.",
+        "displayStyle": "sentence",
+        "parentCue": "Read the sentence together. Point to each word. Ask: 'Who sat?' Celebrate: 'Sam sat!'",
+        "durationHint": 30
+      }
+    ]
+  },
+  {
+    "lessonNumber": 4,
+    "title": "Lesson 4",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "a  m  s  e  t",
+        "displayStyle": "word",
+        "parentCue": "Point to each letter in order. Ask: 'What sound?' Go through all five. Quick pace, praise correct answers.",
+        "durationHint": 40
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "r",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is rrr. Say it with me: rrr.' Have Kiran say 'rrr' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "ram",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'rrr-aaa-mmm. Ram!' Have Kiran try it.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "rat",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'rrr-aaa-t. Rat!' Ask Kiran: 'What word?'",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "Sam",
+        "displayStyle": "word",
+        "parentCue": "Review word. Run finger under it. 'sss-aaa-mmm. Sam!' Quick review.",
+        "durationHint": 30
+      },
+      {
+        "type": "story",
+        "displayText": "A ram sat.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together. Point to each word. Ask: 'What sat?' (A ram!) Praise.",
+        "durationHint": 30
+      }
+    ]
+  },
+  {
+    "lessonNumber": 5,
+    "title": "Lesson 5",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "m  s  a  e  t  r",
+        "displayStyle": "word",
+        "parentCue": "Quick review of all six sounds. Point and ask: 'What sound?' Aim for fast, confident responses.",
+        "durationHint": 40
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "d",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is d. Say it with me: d.' Have Kiran say 'd' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "mad",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'mmm-aaa-d. Mad!' Have Kiran try.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "sad",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'sss-aaa-d. Sad!' Ask: 'What word?'",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "read",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'rrr-eee-aaa-d. Read!' Emphasize the long e sound.",
+        "durationHint": 60
+      },
+      {
+        "type": "story",
+        "displayText": "A rat sat. Sam read.",
+        "displayStyle": "sentence",
+        "parentCue": "Read each sentence. Point to each word. Ask Kiran to find the word 'rat.' Celebrate!",
+        "durationHint": 40
+      }
+    ]
+  },
+  {
+    "lessonNumber": 6,
+    "title": "Lesson 6",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "e  t  r  d  m  s  a",
+        "displayStyle": "word",
+        "parentCue": "Review all sounds in mixed order. Quick pace. Praise speed and accuracy.",
+        "durationHint": 40
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "th",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letters. Say: 'These two letters together say thh. Say it with me: thh.' Have Kiran say 'thh' three times. Show tongue position if helpful.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "that",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'thh-aaa-t. That!' Have Kiran try.",
+        "durationHint": 60
+      },
+      {
+        "type": "word_reading",
+        "displayText": "mat",
+        "displayStyle": "word",
+        "parentCue": "Quick review. Sound it out: 'mmm-aaa-t. Mat!'",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "sad",
+        "displayStyle": "word",
+        "parentCue": "Quick review. Sound it out: 'sss-aaa-d. Sad!'",
+        "durationHint": 30
+      },
+      {
+        "type": "story",
+        "displayText": "Sam sat. That rat sat.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together. Point to each word. Ask: 'What did Sam do? What did the rat do?' Same answer! Fun!",
+        "durationHint": 40
+      }
+    ]
+  },
+  {
+    "lessonNumber": 7,
+    "title": "Lesson 7",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "th  d  r  t  s  m  a  e",
+        "displayStyle": "word",
+        "parentCue": "Review all sounds including 'th.' Mixed order, quick pace.",
+        "durationHint": 45
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "i",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is iii (short i, as in \"it\"). Say it with me: iii.' Have Kiran say 'iii' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "it",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'iii-t. It!' Short and quick.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "sit",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'sss-iii-t. Sit!' Have Kiran try.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "this",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'thh-iii-sss. This!' Practice a few times.",
+        "durationHint": 60
+      },
+      {
+        "type": "story",
+        "displayText": "Sit, Sam. This is it.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together. Point to each word. Make it fun — tell Sam to sit! Ask Kiran: 'Can you find the word sit?'",
+        "durationHint": 40
+      }
+    ]
+  },
+  {
+    "lessonNumber": 8,
+    "title": "Lesson 8",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "i  th  e  d  r  a  m  s  t",
+        "displayStyle": "word",
+        "parentCue": "Review all sounds. Include 'th' and short 'i.' Quick pace, celebrate fast answers.",
+        "durationHint": 45
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "n",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is nnn. Say it with me: nnn.' Have Kiran say 'nnn' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "an",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'aaa-nnn. An!' Quick word.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "man",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'mmm-aaa-nnn. Man!'",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "ran",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'rrr-aaa-nnn. Ran!' Ask: 'What word?'",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "tin",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 't-iii-nnn. Tin!'",
+        "durationHint": 45
+      },
+      {
+        "type": "story",
+        "displayText": "A man ran. That man is mad.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together, pointing to each word. Ask: 'Who ran? Is the man happy or mad?' Have fun with it!",
+        "durationHint": 40
+      }
+    ]
+  },
+  {
+    "lessonNumber": 9,
+    "title": "Lesson 9",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "n  i  th  e  d  r  a  m  s  t",
+        "displayStyle": "word",
+        "parentCue": "Review all sounds. Mixed order. By now Kiran should be getting faster. Praise confidence!",
+        "durationHint": 45
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "c",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is c (hard c, as in cat). Say it with me: c.' Have Kiran say 'c' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "can",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'c-aaa-nnn. Can!' Have Kiran try.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "cat",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'c-aaa-t. Cat!' Kiran might love this one!",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "in",
+        "displayStyle": "word",
+        "parentCue": "Quick review. 'iii-nnn. In!'",
+        "durationHint": 30
+      },
+      {
+        "type": "story",
+        "displayText": "A cat sat in a tin. That cat is mad.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together. Ask: 'Where did the cat sit? (In a tin!) Is the cat happy?' Make a mad cat face!",
+        "durationHint": 45
+      }
+    ]
+  },
+  {
+    "lessonNumber": 10,
+    "title": "Lesson 10",
+    "segments": [
+      {
+        "type": "review",
+        "displayText": "c  n  i  th  e  d  r  a  m  s  t",
+        "displayStyle": "word",
+        "parentCue": "Full review of all 11 sounds. Go quickly. Celebrate how many Kiran knows!",
+        "durationHint": 50
+      },
+      {
+        "type": "sound_practice",
+        "displayText": "o",
+        "displayStyle": "large_letter",
+        "parentCue": "Point to the letter. Say: 'This sound is ooo (short o, as in not). Say it with me: ooo.' Have Kiran say 'ooo' three times.",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "not",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'nnn-ooo-t. Not!' Have Kiran try.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "on",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'ooo-nnn. On!'",
+        "durationHint": 30
+      },
+      {
+        "type": "word_reading",
+        "displayText": "cot",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'c-ooo-t. Cot!' Explain: a small bed.",
+        "durationHint": 45
+      },
+      {
+        "type": "word_reading",
+        "displayText": "dot",
+        "displayStyle": "word",
+        "parentCue": "Run your finger under the word. Say: 'd-ooo-t. Dot!'",
+        "durationHint": 30
+      },
+      {
+        "type": "story",
+        "displayText": "A cat is on a cot. That is not a rat.",
+        "displayStyle": "sentence",
+        "parentCue": "Read together. Ask: 'Where is the cat? Is it a rat?' (No! Not a rat!) Have fun with the silliness.",
+        "durationHint": 45
+      }
+    ]
+  }
+]
