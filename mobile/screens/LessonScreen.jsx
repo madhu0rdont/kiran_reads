@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Alert,
   Animated,
+  Platform,
 } from 'react-native';
 import lessons from '../data/lessons.json';
 import SegmentCard from '../components/SegmentCard';
@@ -40,12 +41,12 @@ export default function LessonScreen({ lessonNumber, onComplete, onExit }) {
       Animated.timing(fadeAnim, {
         toValue: 0,
         duration: 120,
-        useNativeDriver: true,
+        useNativeDriver: false,
       }),
       Animated.timing(fadeAnim, {
         toValue: 1,
         duration: 120,
-        useNativeDriver: true,
+        useNativeDriver: false,
       }),
     ]).start();
     setTimeout(callback, 120);
@@ -61,14 +62,20 @@ export default function LessonScreen({ lessonNumber, onComplete, onExit }) {
   };
 
   const handleExit = () => {
-    Alert.alert(
-      'End Session?',
-      'Progress for this lesson won\'t be saved.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        { text: 'End Session', style: 'destructive', onPress: onExit },
-      ]
-    );
+    if (Platform.OS === 'web') {
+      if (window.confirm('End Session? Progress for this lesson won\'t be saved.')) {
+        onExit();
+      }
+    } else {
+      Alert.alert(
+        'End Session?',
+        'Progress for this lesson won\'t be saved.',
+        [
+          { text: 'Cancel', style: 'cancel' },
+          { text: 'End Session', style: 'destructive', onPress: onExit },
+        ]
+      );
+    }
   };
 
   return (

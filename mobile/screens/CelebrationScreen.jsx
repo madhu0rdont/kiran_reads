@@ -8,8 +8,6 @@ import {
   Animated,
   Easing,
 } from 'react-native';
-import { Audio } from 'expo-av';
-
 export default function CelebrationScreen({ lessonNumber, onSave, onSkip }) {
   const [noteText, setNoteText] = useState('');
   const [saving, setSaving] = useState(false);
@@ -23,28 +21,16 @@ export default function CelebrationScreen({ lessonNumber, onSave, onSkip }) {
           toValue: -20,
           duration: 600,
           easing: Easing.inOut(Easing.ease),
-          useNativeDriver: true,
+          useNativeDriver: false,
         }),
         Animated.timing(bounceAnim, {
           toValue: 0,
           duration: 600,
           easing: Easing.inOut(Easing.ease),
-          useNativeDriver: true,
+          useNativeDriver: false,
         }),
       ])
     ).start();
-
-    // Play celebration sound (if available)
-    (async () => {
-      try {
-        const { sound } = await Audio.Sound.createAsync(
-          require('../assets/celebration.mp3')
-        );
-        await sound.playAsync();
-      } catch {
-        // Sound file not available, skip silently
-      }
-    })();
   }, []);
 
   const handleSave = async () => {

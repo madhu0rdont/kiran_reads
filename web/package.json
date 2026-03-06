@@ -1,0 +1,11 @@
+{
+  "name": "kiran-reads-web",
+  "version": "1.0.0",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
